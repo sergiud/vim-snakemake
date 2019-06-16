@@ -3,3 +3,5 @@ if exists("b:did_indent")
 endif
 
 runtime! indent/python.vim
+
+set sw=2 sts=2 et
