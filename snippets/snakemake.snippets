@@ -1,0 +1,19 @@
+snippet rule
+rule ${1:name}:
+  """$2"""
+  input:
+    $3
+  output:
+    $4
+  shell:
+    """
+    "$0"
+    """
+
+snippet expand
+  expand("$1", $0)
+
+snippet shell
+  shell("""
+    $0
+  """)
